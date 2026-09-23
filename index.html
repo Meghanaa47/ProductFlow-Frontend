@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>ProductFlow | Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+<!-- Sidebar -->
+<aside class="sidebar">
+
+    <div class="logo">
+        ProductFlow
+    </div>
+
+    <nav>
+        <a href="index.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="products.html">
+            Products
+        </a>
+
+        <a href="add-product.html">
+            Add Product
+        </a>
+    </nav>
+
+</aside>
+
+
+<!-- Main Content -->
+<main class="main-content">
+
+    <!-- Header -->
+    <header class="topbar">
+
+        <div>
+            <h1>Dashboard</h1>
+            <p>Product management overview</p>
+        </div>
+
+        <a href="add-product.html" class="add-btn">
+            + Add Product
+        </a>
+
+    </header>
+
+
+    <!-- Statistics -->
+    <section class="stats">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">📦</div>
+
+            <div>
+                <p>Total Products</p>
+                <h2 id="totalProducts">0</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">📂</div>
+
+            <div>
+                <p>Total Categories</p>
+                <h2 id="totalCategories">0</h2>
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-icon">💰</div>
+
+            <div>
+                <p>Highest Price</p>
+                <h2 id="highestPrice">₹0</h2>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Dashboard Grid -->
+    <section class="dashboard-grid">
+
+
+        <!-- Recently Added Products -->
+        <div class="dashboard-card">
+
+            <div class="card-header">
+
+                <h2>Recently Added Products</h2>
+
+            </div>
+
+            <div id="recentProducts" class="recent-products">
+
+                Loading...
+
+            </div>
+
+        </div>
+
+
+        <!-- Category Statistics -->
+        <div class="dashboard-card">
+
+            <div class="card-header">
+
+                <h2>Products by Category</h2>
+
+            </div>
+
+            <div id="categoryStats">
+
+                Loading...
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Quick Actions -->
+    <section class="dashboard-card quick-actions">
+
+        <div class="card-header">
+
+            <h2>Quick Actions</h2>
+
+        </div>
+
+        <div class="action-buttons">
+
+            <a href="products.html" class="action-btn">
+                View Products
+            </a>
+
+            <a href="add-product.html" class="action-btn">
+                Add New Product
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- JavaScript -->
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
